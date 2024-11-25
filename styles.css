@@ -1,0 +1,375 @@
+:root {
+    --color-primary: #ff0000;
+    --color-secondary: #ffffff;
+    --color-dark: #000000;
+    --color-light: #f1f1f1;
+    --font-primary: "Rubik", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* font-family: var(--font-primary); */
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    font-family: "Instrument Sans", sans-serif;
+} */
+
+.header,
+footer {
+    color: #FFFFFF;
+    font-family: "Rubik", Sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 4px;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #CC0D0D 0%, #880303 100%);
+}
+
+.hero {
+    background: url('./assets/img/bg-hero-s.webp');
+    padding: 50px 0;
+    text-align: center;
+    min-height: 100vh;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.hero h1 {
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 1em;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.hero .highlight {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #CC0D0D, #880303, #CC0D0D, #880303);
+    background-size: 200% 200%;
+    animation: textura 8s ease-in-out infinite;
+    transition: background 1.6s cubic-bezier(0.55, 0.1, 0.47, 0.94) 0s;
+    transition: all .8s;
+}
+
+.hero p {
+    text-align: center;
+    color: #E0E0E0;
+    font-family: "Instrument Sans", Sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3em;
+    letter-spacing: 0px;
+}
+
+
+/* freatures */
+.features-section {
+    /* background: #0b0b0b; */
+    /* Cor de fundo */
+    color: #fff;
+    font-family: "Instrument Sans", sans-serif;
+    /* Cor do texto */
+}
+
+.features-title {
+    font-size: 28px;
+    font-family: "Instrument Sans", sans-serif;
+    /* Tamanho do título */
+    font-weight: bold;
+}
+
+.features-title .text-danger {
+    color: #ff0000;
+    /* Destaca o texto em vermelho */
+}
+
+.card {
+    background-color: #333333 !important;
+    background-image: linear-gradient(135deg, #00000091 0%, #080F0E8C 100%) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #FFFFFF1A;
+    border-radius: 1rem;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #ff0000;
+}
+
+.card-icon svg {
+    width: 20px;
+    /* Tamanho dos ícones */
+    height: 20px;
+    fill: #ffffff;
+}
+
+.card-title {
+    font-size: 28px;
+    /* Tamanho do título dos cards */
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #E0E0E0;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.card-text {
+    font-size: 18px;
+    /* Texto menor para descrição */
+    line-height: 1.6;
+    /* Melhor espaçamento entre linhas */
+    color: #E0E0E0;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.rodapeCards {
+    font-size: 18px;
+    /* Texto menor para descrição */
+    line-height: 1.6;
+    /* Melhor espaçamento entre linhas */
+    color: #E0E0E0;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+/* Botão */
+.btn-dark {
+    background: #000;
+    /* Cor de fundo do botão */
+    color: #fff;
+    /* Cor do texto */
+    border: 2px solid transparent;
+    /* Borda invisível padrão */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background: #111;
+    /* Cor ao passar o mouse */
+    border-color: #ff0000;
+    /* Destaca a borda ao passar o mouse */
+}
+
+.btn-dark .text-danger {
+    color: #ff0000;
+    /* Mantém o texto em vermelho */
+}
+
+/* Ajustes para Responsividade */
+@media screen and (max-width: 768px) {
+    .features-title {
+        font-size: 22px;
+        /* Reduz tamanho do título em tablets */
+    }
+
+    .card {
+        padding: 15px;
+        /* Reduz o padding dos cards em telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {}
+
+
+
+/* pricing */
+
+.pricing {
+    background: linear-gradient(180deg, var(--color-primary), var(--color-dark));
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pricing ul {
+    list-style: none;
+    padding: 0;
+    color: var(--color-light);
+}
+
+.pricing ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.pricing ul li i {
+    color: var(--color-primary);
+    margin-right: 10px;
+}
+
+.pricing .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pricing .price span {
+    color: var(--color-secondary);
+}
+
+/* .footer {
+    background: var(--color-dark);
+    padding: 20px 0;
+    color: var(--color-secondary);
+    text-align: center;
+} */
+
+/* investment-section */
+.investment-section {
+    border-radius: 1rem;
+}
+
+.investment-section img {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.investment-section ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.investment-section .value{
+    color: #22D87C;
+    font-size: 33px;
+}
+
+/* .investment-section .cardBodey {
+    z-index: 1;
+}
+
+.investment-section .cardFooter {
+    z-index: 0;
+    transform: translateY(-5rem);
+} */
+
+
+
+/* se repete */
+.animated-border-btn {
+    font-family: "Instrument Sans", Sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.2em;
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.animated-border-btn::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    z-index: 3;
+    transition: opacity 0.2s linear;
+    opacity: 1;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.animated-border-btn::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff20;
+    z-index: 1;
+    transition: opacity 0.3s linear;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px !important;
+}
+
+.animated-border-btn .highlight {
+    font-style: italic;
+    font-weight: 500;
+    font-family: "Instrument Sans", Sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #CC0D0D, #880303, #CC0D0D, #880303);
+    background-size: 200% 200%;
+    animation: textura 8s ease-in-out infinite;
+    transition: background 1.6s cubic-bezier(0.55, 0.1, 0.47, 0.94) 0s;
+    transition: all .8s;
+}
+
+.animated-border-btn .text {
+    position: relative;
+    z-index: 9999;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .header,
+    footer {}
+
+    .hero {
+        background: url('./assets/img/bg-hero.webp');
+        min-height: 100vh;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    /* se repete */
+    .animated-border-btn {
+        font-family: "Instrument Sans", Sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .investment-section ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .investment-section .value{
+        color: #22D87C;
+        font-size: 55px;
+    }
+
+}

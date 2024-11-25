@@ -206,6 +206,13 @@ footer {
     /* Evita que o gradiente extrapole */
     text-decoration: none;
     /* Remove underline */
+    transition: all .3s ease;
+}
+
+.animated-border-btn:hover{
+    color: #ffffff;
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 .animated-border-btn::before {
@@ -274,12 +281,6 @@ footer {
         /* Finaliza suavemente */
     }
 }
-
-
-/* animação farol vermelho */
-
-
-
 
 /* Media Queries */
 @media screen and (max-width: 768px) {

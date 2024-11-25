@@ -187,6 +187,78 @@ footer {
     font-size: 33px;
 }
 
+/* video */
+
+
+/* Seção de Vídeo */
+.video-lead-section {
+    /* background: linear-gradient(45deg, #cc0d0d, #880303, #cc0d0d); */
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    padding: 4rem 0;
+}
+
+.video-lead-section h2 {
+    color: #ffffff;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.video-lead-section h2 .highlight {
+    background: linear-gradient(45deg, #cc0d0d, #880303, #cc0d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: textura 5s ease-in-out infinite;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, #cc0d0d1a, #8803031a);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+.animated-border-btn {
+    margin-top: 1rem;
+}
+
+/* Animação do Gradiente no Texto */
+@keyframes textura {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+
+
+
 /* Buttons */
 .animated-border-btn {
     font-family: "Instrument Sans", sans-serif;
@@ -209,7 +281,7 @@ footer {
     transition: all .3s ease;
 }
 
-.animated-border-btn:hover{
+.animated-border-btn:hover {
     color: #ffffff;
     text-decoration: none;
     transform: scale(1.1);
